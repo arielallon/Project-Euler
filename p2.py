@@ -1,3 +1,11 @@
+'''
+Project Euler: Problem 2
+Solution by Ariel Allon
+
+"By considering the terms in the Fibonacci sequence whose values do not exceed 
+four million, find the sum of the even-valued terms."
+'''
+
 fibs = {0:0, 1:1}
 
 def fib(x):

@@ -1,5 +1,3 @@
-import time
-
 '''
 Project Euler: Problem 5
 Solution by Ariel Allon
@@ -13,6 +11,8 @@ For a number N, every N natural numbers you will find a number divisible by N,
 it makes the most sense to test them in decreasing order since a higher N is 
 less likely to be a divisor and thus will shoot down invalid solutions sooner.
 '''
+
+import time
 
 # Test every number from start on up whether it's divisible by the numbers in 
 # rng. As soon as we encounter a number in rng that is not a divisor, skip to

@@ -38,7 +38,7 @@ def idea1(rng, start, jump = 1):
 
 # Another idea of how to approach this. Turns out to be slower, but left for 
 # historical purposes. 
-def idea2(rng, start):
+def idea2(rng):
     curMax = max(rng)
     r = dict([(x,x) for x in rng])
     allEqual = False
@@ -56,13 +56,23 @@ def idea2(rng, start):
     print curMax, "solution!"
 
 
+# divide and conquer LCMs
+# toy example: rng = [1,2,3,4]
+# lcm(1,2,3,4) == lcm( lcm(1,2), lcm(3,4) ) == lcm( 2, 12) == 12
+def idea3(rng):
+    print "not implemented yet"
+    
+
+def lcm(m,n):
+    
+
 def main(opt, rng, start = 1):
     if (opt == 1):
         return idea1(rng, start, 1)
     elif (opt == 2):
         return idea1(rng, start, 20)
     elif (opt == 3):
-        return idea2(rng, start)
+        return idea2(rng)
 
 
 if __name__ == '__main__':
